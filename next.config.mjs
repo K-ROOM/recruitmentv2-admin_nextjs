@@ -6,8 +6,10 @@ const nextConfig = {
     env: {
         timeZone: 'Asia/Bangkok',
     },
+    experimental: {
+        serverActions: true,
+    },
     reactStrictMode: true,
-    output: 'standalone',
     // useFileSystemPublicRoutes: false,
 };
 
