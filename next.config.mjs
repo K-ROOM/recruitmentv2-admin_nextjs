@@ -8,6 +8,13 @@ const nextConfig = {
     },
     reactStrictMode: true,
     // useFileSystemPublicRoutes: false,
+    webpack: (config) => {
+        config.resolve.alias = {
+            ...config.resolve.alias,
+            '@': path.resolve(__dirname, './'),
+        };
+        return config;
+    },
 };
 
 export default nextConfig;

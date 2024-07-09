@@ -11,7 +11,7 @@ import Loading from '../loading';
 import { Tabs, Tab } from "@nextui-org/react";
 import Link from "next/link";
 import { PatchApplicationHeader } from '../actions/actionForm';
-import Report from "./application_report_main"
+import Report from "@/app/components/application_report_main";
 import { LuFileEdit } from "react-icons/lu";
 import { MdAccessTime } from "react-icons/md";
 
