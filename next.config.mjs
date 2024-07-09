@@ -7,6 +7,7 @@ const nextConfig = {
         timeZone: 'Asia/Bangkok',
     },
     reactStrictMode: true,
+    output: 'standalone',
     // useFileSystemPublicRoutes: false,
 };
 
