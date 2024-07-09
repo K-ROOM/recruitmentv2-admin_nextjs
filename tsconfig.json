@@ -19,7 +19,7 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "pages/_app.js", "src/app/api/auth/[…nextauth]/route.ts", "src/app/page.tsx", "src/app/api/auth/[...nextauth]/route.js", "src/app/api/auth/[...nextauth].js", "src/app/components/Provider.js", "src/app/api/auth/[...nextauth]/options.ts", "src/app/components/getmasterposition.tsx", "src/app/components/main_header.tsx"],
