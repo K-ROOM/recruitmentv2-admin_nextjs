@@ -4,11 +4,11 @@ import { redirect } from "next/navigation";
 import { getServerSession } from "next-auth";
 import PermissionDenied from "src/app/components/permission_denied";
 import { Suspense } from "react";
-import Loading from "src/app/loading";
-import MainNavbar from "src/app/components/main_navbar";
-import AccountBody from "src/app/components/account_body";
-import Login from "src/app/components/login";
-import { authOptions } from "src/app/api/auth/[...nextauth]/auth";
+import Loading from "../../loading";
+import MainNavbar from "../../components/main_navbar";
+import AccountBody from "../../components/account_body";
+import Login from "../../components/login";
+import { authOptions } from "../../api/auth/[...nextauth]/auth";
 
 export default async function Account() {
   const session = await getServerSession(authOptions)
