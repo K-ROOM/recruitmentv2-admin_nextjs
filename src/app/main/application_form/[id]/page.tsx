@@ -1,9 +1,9 @@
 "use server";
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/app/api/auth/[...nextauth]/auth";
+import { authOptions } from "../../../api/auth/[...nextauth]/auth";
 import axios from "axios";
-import ApplicationForm_Main from "@/app/components/applicationform_main";
-import Login from "@/app/components/login";
+import ApplicationForm_Main from "../../../components/applicationform_main";
+import Login from "../../../components/login";
 
 export default async function ApplicationForm({ params }: any) {
   const session: any = await getServerSession(authOptions)
