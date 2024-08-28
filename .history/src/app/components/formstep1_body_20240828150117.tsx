@@ -250,7 +250,7 @@ const Form1_Body = ({ session, header }: any) => {
         }
         if (name === 'dateofBirth') {
             if (value != '') {
-                const formattedDate = moment(value).format('YYYY-MM-DD');
+                const formattedDate = moment(`${convertedYear}-${month}-${day}`).format('YYYY-MM-DD');
                 console.log(formattedDate);
                 setformData((prevData) => ({
                     ...prevData,
@@ -386,7 +386,7 @@ const Form1_Body = ({ session, header }: any) => {
 
                     <div className="col-span-2 sm:col-span-full">
                         <p className="text-title">Starting Date</p>
-                        <input type="date" id="startingDate" name="startingDate" value={formData.startingDate === null ? '' : moment(formData.startingDate).set('year', moment(formData.startingDate).year()).format('YYYY-MM-DD')} onChange={handleInputChange} className="input-formcontrol" required />
+                        <input type="date" id="startingDate" name="startingDate" value={formData.startingDate === null ? '' : formData.startingDate} onChange={handleInputChange} className="input-formcontrol" required />
                     </div>
                 </div>
 

@@ -250,8 +250,7 @@ const Form1_Body = ({ session, header }: any) => {
         }
         if (name === 'dateofBirth') {
             if (value != '') {
-                const formattedDate = moment(value).format('YYYY-MM-DD');
-                console.log(formattedDate);
+                const formattedDate = value ? moment(value).utcOffset(420).format('YYYY-MM-DD') : '';
                 setformData((prevData) => ({
                     ...prevData,
                     [name]: formattedDate,
@@ -386,7 +385,7 @@ const Form1_Body = ({ session, header }: any) => {
 
                     <div className="col-span-2 sm:col-span-full">
                         <p className="text-title">Starting Date</p>
-                        <input type="date" id="startingDate" name="startingDate" value={formData.startingDate === null ? '' : moment(formData.startingDate).set('year', moment(formData.startingDate).year()).format('YYYY-MM-DD')} onChange={handleInputChange} className="input-formcontrol" required />
+                        <input type="date" id="startingDate" name="startingDate" value={formData.startingDate === null ? '' : formData.startingDate} onChange={handleInputChange} className="input-formcontrol" required />
                     </div>
                 </div>
 
@@ -552,7 +551,7 @@ const Form1_Body = ({ session, header }: any) => {
                 <div className="grid grid-cols-12 gap-4 mt-6">
                     <div className="col-span-2 sm:col-span-full ">
                         <p className="text-title">Date of Birth</p>
-                        <input type="date" id="dateofBirth" name="dateofBirth" value={formData.dateofBirth === null ? '' : moment(formData.dateofBirth).set('year', moment(formData.dateofBirth).year()).format('YYYY-MM-DD')} onChange={handleInputChange} className="input-formcontrol" required />
+                        <input type="date" id="dateofBirth" name="dateofBirth" value={formData.dateofBirth === null ? '' : formData.dateofBirth} onChange={handleInputChange} className="input-formcontrol" required />
                     </div>
 
                     <div className="col-span-4 sm:col-span-full ">

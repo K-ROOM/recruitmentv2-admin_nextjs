@@ -386,7 +386,7 @@ const Form1_Body = ({ session, header }: any) => {
 
                     <div className="col-span-2 sm:col-span-full">
                         <p className="text-title">Starting Date</p>
-                        <input type="date" id="startingDate" name="startingDate" value={formData.startingDate === null ? '' : moment(formData.startingDate).set('year', moment(formData.startingDate).year()).format('YYYY-MM-DD')} onChange={handleInputChange} className="input-formcontrol" required />
+                        <input type="date" id="startingDate" name="startingDate" value={formData.startingDate === null ? '' : formData.startingDate moment(formData.dateofBirth).set('year', moment(formData.dateofBirth).year()).format('YYYY-MM-DD')} onChange={handleInputChange} className="input-formcontrol" required />
                     </div>
                 </div>
 
