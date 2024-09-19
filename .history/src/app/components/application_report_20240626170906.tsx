@@ -51,7 +51,7 @@ const Report = (props: any) => {
                 worksheet.getCell('R17').value = data.weight
                 worksheet.getCell('V17').value = data.bloodGroup
                 worksheet.getCell('B18').value = data.nationality
-                worksheet.getCell('N18').value = data.selectIDPP == "ID Card" ? data.idCardno : data.idPassportno
+                worksheet.getCell('N18').value = data.selectIDPP == "idcard" ? data.idCardno : data.idPassportno
                 worksheet.getCell('E19').value = data.permanentAddress
                 worksheet.getCell('D20').value = data.presentAddress
                 worksheet.getCell('D21').value = data.ownerorRental

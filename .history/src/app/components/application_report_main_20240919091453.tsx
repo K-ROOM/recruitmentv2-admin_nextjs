@@ -51,7 +51,7 @@ const Report = (props: any) => {
                 worksheet.getCell('R17').value = data.weight
                 worksheet.getCell('V17').value = data.bloodGroup
                 worksheet.getCell('B18').value = data.nationality
-                worksheet.getCell('N18').value = data.selectIDPP == "ID Card" ? data.idCardno : data.idPassportno
+                worksheet.getCell('N18').value = data.selectIDPP == "idCard" ? data.idCardno : data.idPassportno
                 worksheet.getCell('E19').value = data.permanentAddress
                 worksheet.getCell('D20').value = data.presentAddress
                 worksheet.getCell('D21').value = data.ownerorRental
@@ -172,14 +172,14 @@ const Report = (props: any) => {
                 worksheet.getCell('J109').value = data.speakingOTH == "G" ? "Good" : data.speakingOTH == "F" ? "Fair" : data.speakingOTH == "P" ? "Poor" : "";
                 worksheet.getCell('P109').value = data.readingOTH == "G" ? "Good" : data.readingOTH == "F" ? "Fair" : data.readingOTH == "P" ? "Poor" : "";
                 worksheet.getCell('U109').value = data.writingOTH == "G" ? "Good" : data.writingOTH == "F" ? "Fair" : data.writingOTH == "P" ? "Poor" : "";
-                
+
                 worksheet.getCell('F115').value = data.toeicScore
                 worksheet.getCell('U115').value = data.msword == "G" ? "Good" : data.msword == "F" ? "Fair" : data.msword == "P" ? "Poor" : "";
                 worksheet.getCell('A116').value = data.otherLanguageTest
                 worksheet.getCell('F116').value = data.ieltsScore
                 worksheet.getCell('U116').value = data.msexcel == "G" ? "Good" : data.msexcel == "F" ? "Fair" : data.msexcel == "P" ? "Poor" : "";
                 worksheet.getCell('U117').value = data.mspowerpoint == "G" ? "Good" : data.mspowerpoint == "F" ? "Fair" : data.mspowerpoint == "P" ? "Poor" : "";
-                
+
                 worksheet.getCell('R120').value = data.workUpcountry == "Y" ? "Yes" : "No"
                 worksheet.getCell('R121').value = data.overseastripandTraining == "Y" ? "Yes" : "No"
                 worksheet.getCell('R122').value = data.underlyingDisease == "Y" ? "Yes" : "No"
@@ -241,12 +241,11 @@ const Report = (props: any) => {
 
     }
 
-
     return (
         <>
             {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
-            <a onClick={(e) => downloadReport(e)} className="inline-flex bg-purple-600 hover:bg-purple-700 font-medium px-3 py-3 text-white rounded-md text-xs text-center cursor-pointer">
-                <SiMicrosoftexcel className="inline-flex w-4 h-4 text-white mr-2" /> application report
+            <a onClick={(e) => downloadReport(e)} className="inline-flex text-purple-800 bg-purple-200 hover:bg-purple-300 font-medium px-3 py-3 rounded-md text-xs text-center cursor-pointer">
+                <SiMicrosoftexcel className="inline-flex w-4 h-4 text-purple-800 mr-2" /> Application Form
             </a>
         </>
     );
