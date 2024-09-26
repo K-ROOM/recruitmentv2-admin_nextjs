@@ -211,10 +211,10 @@ const Report = (props: any) => {
 
                 worksheet.getCell('A152').value = data.presentJobOrProject
 
-                worksheet.getCell('M159').value = data.inquiriesFromPreEmp == "Y" ? "Yes" : "No"
+                worksheet.getCell('M158').value = data.inquiriesFromPreEmp == "Y" ? "Yes" : "No"
 
                 const registrationDate = data.registrationDate;
-                worksheet.getCell('T190').value = registrationDate ? moment(data.registrationDate).format("DD MMM yyyy") : ""
+                worksheet.getCell('T189').value = registrationDate ? moment(data.registrationDate).format("DD MMM yyyy") : ""
                 // กำหนดค่าของเซลล์
 
                 // แปลง workbook กลับเป็น blob

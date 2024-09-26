@@ -8,7 +8,6 @@ import { MdSaveAs } from "react-icons/md";
 import { IoLockClosed } from "react-icons/io5";
 import { FaCirclePlus } from "react-icons/fa6";
 import { FaCircleXmark } from "react-icons/fa6";
-import Image from "next/image";
 
 const Form2_Body = ({ session, header }: any) => {
 

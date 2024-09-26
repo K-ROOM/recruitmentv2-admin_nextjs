@@ -223,7 +223,7 @@ const MasterEducation_Body = ({ session, header }: any) => {
                                                 {
                                                     checkCreateEducationStatus ?
                                                         <>
-                                                            <Image src="/check.gif" alt="Loading..." style={{ width: 150, height: 150 }} />
+                                                            <img src="/check.gif" alt="Loading..." style={{ width: 150, height: 150 }} />
                                                         </>
                                                         :
                                                         <>
@@ -315,7 +315,7 @@ const MasterEducation_Body = ({ session, header }: any) => {
                                                 {
                                                     checkDeleteEducationStatus ?
                                                         <>
-                                                            <Image src="/check.gif" alt="Loading..." style={{ width: 150, height: 150 }} />
+                                                            <img src="/check.gif" alt="Loading..." style={{ width: 150, height: 150 }} />
                                                         </>
                                                         :
                                                         <>

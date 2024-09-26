@@ -204,17 +204,17 @@ const Report = (props: any) => {
                 worksheet.getCell('Q141').value = data.telephoneRef
                 worksheet.getCell('U141').value = data.occupationRef
 
-                worksheet.getCell('A148').value = data.firstnameEmergency + "  " + data.lastnameEmergency
-                worksheet.getCell('F148').value = data.addressEmergency
-                worksheet.getCell('Q148').value = data.telnoEmergency
-                worksheet.getCell('U148').value = data.relationshipEmergency
+                worksheet.getCell('A147').value = data.firstnameEmergency + "  " + data.lastnameEmergency
+                worksheet.getCell('F147').value = data.addressEmergency
+                worksheet.getCell('Q147').value = data.telnoEmergency
+                worksheet.getCell('U147').value = data.relationshipEmergency
 
-                worksheet.getCell('A152').value = data.presentJobOrProject
+                worksheet.getCell('A151').value = data.presentJobOrProject
 
-                worksheet.getCell('M159').value = data.inquiriesFromPreEmp == "Y" ? "Yes" : "No"
+                worksheet.getCell('M158').value = data.inquiriesFromPreEmp == "Y" ? "Yes" : "No"
 
                 const registrationDate = data.registrationDate;
-                worksheet.getCell('T190').value = registrationDate ? moment(data.registrationDate).format("DD MMM yyyy") : ""
+                worksheet.getCell('T189').value = registrationDate ? moment(data.registrationDate).format("DD MMM yyyy") : ""
                 // กำหนดค่าของเซลล์
 
                 // แปลง workbook กลับเป็น blob

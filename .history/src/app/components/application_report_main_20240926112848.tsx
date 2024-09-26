@@ -184,37 +184,37 @@ const Report = (props: any) => {
                 worksheet.getCell('R121').value = data.workUpcountry == "Y" ? "Yes" : "No"
                 worksheet.getCell('R122').value = data.overseastripandTraining == "Y" ? "Yes" : "No"
                 worksheet.getCell('R123').value = data.underlyingDisease == "Y" ? "Yes" : "No"
-                worksheet.getCell('T123').value = data.underlyingDiseaseDetail
-                worksheet.getCell('R124').value = data.physicalDisability == "Y" ? "Yes" : "No"
-                worksheet.getCell('T124').value = data.physicalDisabilityDetail
-                worksheet.getCell('R125').value = data.lawsuitorConvicted == "Y" ? "Yes" : "No"
-                worksheet.getCell('T125').value = data.lawsuitorConvictedDetail
-                worksheet.getCell('R126').value = data.sackedFromJob == "Y" ? "Yes" : "No"
-                worksheet.getCell('R127').value = data.workingOverTime == "Y" ? "Yes" : "No"
-                worksheet.getCell('R128').value = data.usedtoWorkinNEC == "Y" ? "Yes" : "No"
-                worksheet.getCell('R129').value = data.foRinNEC == "Y" ? "Yes" : "No"
-                worksheet.getCell('T129').value = data.foRinNECname
-                worksheet.getCell('T130').value = data.foRinNECposition
-                worksheet.getCell('T131').value = data.foRinNECrelationship
+                worksheet.getCell('T122').value = data.underlyingDiseaseDetail
+                worksheet.getCell('R123').value = data.physicalDisability == "Y" ? "Yes" : "No"
+                worksheet.getCell('T123').value = data.physicalDisabilityDetail
+                worksheet.getCell('R124').value = data.lawsuitorConvicted == "Y" ? "Yes" : "No"
+                worksheet.getCell('T124').value = data.lawsuitorConvictedDetail
+                worksheet.getCell('R125').value = data.sackedFromJob == "Y" ? "Yes" : "No"
+                worksheet.getCell('R126').value = data.workingOverTime == "Y" ? "Yes" : "No"
+                worksheet.getCell('R127').value = data.usedtoWorkinNEC == "Y" ? "Yes" : "No"
+                worksheet.getCell('R128').value = data.foRinNEC == "Y" ? "Yes" : "No"
+                worksheet.getCell('T128').value = data.foRinNECname
+                worksheet.getCell('T129').value = data.foRinNECposition
+                worksheet.getCell('T130').value = data.foRinNECrelationship
 
-                worksheet.getCell('A133').value = data.joinOurCompany
+                worksheet.getCell('A132').value = data.joinOurCompany
 
-                worksheet.getCell('A141').value = data.firstnameRef + "  " + data.lastnameRef
-                worksheet.getCell('F141').value = data.addressRef
-                worksheet.getCell('Q141').value = data.telephoneRef
-                worksheet.getCell('U141').value = data.occupationRef
+                worksheet.getCell('A140').value = data.firstnameRef + "  " + data.lastnameRef
+                worksheet.getCell('F140').value = data.addressRef
+                worksheet.getCell('Q140').value = data.telephoneRef
+                worksheet.getCell('U140').value = data.occupationRef
 
-                worksheet.getCell('A148').value = data.firstnameEmergency + "  " + data.lastnameEmergency
-                worksheet.getCell('F148').value = data.addressEmergency
-                worksheet.getCell('Q148').value = data.telnoEmergency
-                worksheet.getCell('U148').value = data.relationshipEmergency
+                worksheet.getCell('A147').value = data.firstnameEmergency + "  " + data.lastnameEmergency
+                worksheet.getCell('F147').value = data.addressEmergency
+                worksheet.getCell('Q147').value = data.telnoEmergency
+                worksheet.getCell('U147').value = data.relationshipEmergency
 
-                worksheet.getCell('A152').value = data.presentJobOrProject
+                worksheet.getCell('A151').value = data.presentJobOrProject
 
-                worksheet.getCell('M159').value = data.inquiriesFromPreEmp == "Y" ? "Yes" : "No"
+                worksheet.getCell('M158').value = data.inquiriesFromPreEmp == "Y" ? "Yes" : "No"
 
                 const registrationDate = data.registrationDate;
-                worksheet.getCell('T190').value = registrationDate ? moment(data.registrationDate).format("DD MMM yyyy") : ""
+                worksheet.getCell('T189').value = registrationDate ? moment(data.registrationDate).format("DD MMM yyyy") : ""
                 // กำหนดค่าของเซลล์
 
                 // แปลง workbook กลับเป็น blob

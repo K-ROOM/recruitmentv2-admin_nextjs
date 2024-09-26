@@ -402,7 +402,7 @@ const MasterPosition_Body = ({ session, header }: any) => {
                                                 {
                                                     checkCreatePositionStatus ?
                                                         <>
-                                                            <Image src="/check.gif" alt="Loading..." style={{ width: 150, height: 150, textAlign: 'center' }} />
+                                                            <img src="/check.gif" alt="Loading..." style={{ width: 150, height: 150, textAlign: 'center' }} />
                                                         </>
                                                         :
                                                         <>
@@ -581,7 +581,7 @@ const MasterPosition_Body = ({ session, header }: any) => {
                                                 {
                                                     checkEditPositionStatus ?
                                                         <>
-                                                            <Image src="/check.gif" alt="Loading..." style={{ width: 150, height: 150, textAlign: 'center' }} />
+                                                            <img src="/check.gif" alt="Loading..." style={{ width: 150, height: 150, textAlign: 'center' }} />
                                                         </>
                                                         :
                                                         <>
@@ -762,7 +762,7 @@ const MasterPosition_Body = ({ session, header }: any) => {
                                                 {
                                                     checkDeletePositionStatus ?
                                                         <>
-                                                            <Image src="/check.gif" alt="Loading..." style={{ width: 150, height: 150 }} />
+                                                            <img src="/check.gif" alt="Loading..." style={{ width: 150, height: 150 }} />
                                                         </>
                                                         :
                                                         <>

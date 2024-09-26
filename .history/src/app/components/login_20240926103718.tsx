@@ -5,7 +5,6 @@ import useSWR from 'swr';
 import Link from "next/link";
 import { redirect } from 'next/dist/server/api-utils';
 import { FaRegEye, FaRegEyeSlash } from 'react-icons/fa';
-import Image from "next/image";
 
 const fetcher = async (url: any) => {
     const response = await fetch(url);

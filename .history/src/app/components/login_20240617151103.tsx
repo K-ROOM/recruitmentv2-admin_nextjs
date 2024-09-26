@@ -5,7 +5,6 @@ import useSWR from 'swr';
 import Link from "next/link";
 import { redirect } from 'next/dist/server/api-utils';
 import { FaRegEye, FaRegEyeSlash } from 'react-icons/fa';
-import Image from "next/image";
 
 const fetcher = async (url: any) => {
     const response = await fetch(url);
@@ -51,7 +50,7 @@ const Login = () => {
             <div className="flex min-h-screen items-stretch">
                 <div className="flex-1 bg-indigo-600 sm:hidden md:block my-auto">
                     <div className="flex items-center justify-center h-screen">
-                        <Image src="/login.svg" className="w-3/5 mx-auto" />
+                        <img src="/login.svg" className="w-3/5 mx-auto" />
                     </div>
                 </div>
                 <div className="flex-1 sm:bg-indigo-50">

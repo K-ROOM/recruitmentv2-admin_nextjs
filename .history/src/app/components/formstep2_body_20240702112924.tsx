@@ -8,7 +8,6 @@ import { MdSaveAs } from "react-icons/md";
 import { IoLockClosed } from "react-icons/io5";
 import { FaCirclePlus } from "react-icons/fa6";
 import { FaCircleXmark } from "react-icons/fa6";
-import Image from "next/image";
 
 const Form2_Body = ({ session, header }: any) => {
 
@@ -743,7 +742,7 @@ const Form2_Body = ({ session, header }: any) => {
                                             <>
                                                 <div className="flex self-center px-5 pt-5 border-solid border-blueGray-200 rounded-t">
                                                     <h3 className="text-xl font-semibold">
-                                                        <Image src="/check.gif" alt="Loading..." style={{ width: 150, height: 150 }} />
+                                                        <img src="/check.gif" alt="Loading..." style={{ width: 150, height: 150 }} />
                                                     </h3>
                                                 </div>
                                                 <div className="relative px-8 pt-4 pb-8 flex-auto text-center">
@@ -758,7 +757,7 @@ const Form2_Body = ({ session, header }: any) => {
                                             <>
                                                 <div className="flex self-center px-5 pt-9 pb-6 border-solid border-blueGray-200 rounded-t">
                                                     <h3 className="text-xl font-semibold">
-                                                        <Image src="/error.gif" alt="Loading..." style={{ width: 100, height: 100 }} />
+                                                        <img src="/error.gif" alt="Loading..." style={{ width: 100, height: 100 }} />
                                                     </h3>
                                                 </div>
                                                 <div className="relative px-8 pt-4 pb-8 flex-auto text-center">
