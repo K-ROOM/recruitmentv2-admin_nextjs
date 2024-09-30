@@ -59,9 +59,9 @@ const Report = (props: any) => {
                 worksheet.getCell('U19').value = data.homeno
                 worksheet.getCell('D20').value = data.militaryStatus
                 worksheet.getCell('O20').value = data.mobileno
-                worksheet.getCell('B23').value = data.chkcar1 == "Y" ? "Yes / ได้" : "No / ไม่ได้"
-                worksheet.getCell('E23').value = data.chkcar2 == "Y" ? "Yes / มี" : "No / ไม่มี"
-                worksheet.getCell('G23').value = data.chkcar3 == "Y" ? "Yes / มี" : "No / ไม่มี"
+                worksheet.getCell('B23').value = data.chkcar1 == "Y" ? "Yes/ได้" : "No/ไม่ได้"
+                worksheet.getCell('E23').value = data.chkcar2 == "Y" ? "Yes/มี" : "No/ไม่มี"
+                worksheet.getCell('G23').value = data.chkcar3 == "Y" ? "Yes/มี" : "No/ไม่มี"
                 worksheet.getCell('J23').value = data.carLicenseno
 
                 const carIssuesDate = data.carIssuesDate;

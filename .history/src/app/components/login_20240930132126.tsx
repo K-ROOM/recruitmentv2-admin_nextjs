@@ -51,7 +51,7 @@ const Login = () => {
             <div className="flex min-h-screen items-stretch">
                 <div className="flex-1 bg-indigo-600 sm:hidden md:block my-auto">
                     <div className="flex items-center justify-center h-screen">
-                        <img src="/login.svg" className="w-3/5 mx-auto" alt="Loading..." />
+                        <image src="/login.svg" className="w-3/5 mx-auto" alt="Loading..." />
                     </div>
                 </div>
                 <div className="flex-1 sm:bg-indigo-50">

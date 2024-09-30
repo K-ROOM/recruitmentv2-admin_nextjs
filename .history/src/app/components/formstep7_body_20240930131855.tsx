@@ -41,7 +41,7 @@ const Form7_Body = ({ session, header }: any) => {
                         formData.image_FileName !== '' && formData.image_FileName !== null ?
                             <>
                                 <div className="col-span-3 mr-2">
-                                    <Image style={{ borderRadius: 15 }} src={formData.imageBase64} alt="Jese image" width={135} height={165} />
+                                    <Image style={{ borderRadius: 15, width: 135, height: 165 }} src={formData.imageBase64} alt="Jese image" width={135} height={165} />
                                 </div>
                             </>
                             :

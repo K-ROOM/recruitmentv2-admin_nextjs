@@ -600,7 +600,7 @@ const AccountBody = ({ session, header }: any) => {
                                                             {
                                                                 checkDeleteAccountStatus ?
                                                                     <>
-                                                                        <Image src="/check.gif" alt="Loading..." width={150} height={150} />
+                                                                        <Image src="/check.gif" alt="Loading..." style={{ width: 150, height: 150 }} />
                                                                     </>
                                                                     :
                                                                     <>
@@ -751,7 +751,7 @@ const AccountBody = ({ session, header }: any) => {
                                                                 {
                                                                     checkDeleteAccountStatus ?
                                                                         <>
-                                                                            <Image src="/check.gif" alt="Loading..." width={150} height={150} />
+                                                                            <Image src="/check.gif" alt="Loading..." style={{ width: 150, height: 150 }} />
                                                                         </>
                                                                         :
                                                                         <>

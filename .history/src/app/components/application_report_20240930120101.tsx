@@ -59,17 +59,17 @@ const Report = (props: any) => {
                 worksheet.getCell('U19').value = data.homeno
                 worksheet.getCell('D20').value = data.militaryStatus
                 worksheet.getCell('O20').value = data.mobileno
-                worksheet.getCell('B23').value = data.chkcar1 == "Y" ? "Yes / ได้" : "No / ไม่ได้"
-                worksheet.getCell('E23').value = data.chkcar2 == "Y" ? "Yes / มี" : "No / ไม่มี"
-                worksheet.getCell('G23').value = data.chkcar3 == "Y" ? "Yes / มี" : "No / ไม่มี"
+                worksheet.getCell('B23').value = data.chkcar1 == "Y" ? "Yes/ได้" : "No/ไม่ได้"
+                worksheet.getCell('E23').value = data.chkcar2 == "Y" ? "Yes/มี" : "No/ไม่มี"
+                worksheet.getCell('G23').value = data.chkcar3 == "Y" ? "Yes/มี" : "No/ไม่มี"
                 worksheet.getCell('J23').value = data.carLicenseno
 
                 const carIssuesDate = data.carIssuesDate;
                 const carExpiredDate = data.carExpiredDate;
                 worksheet.getCell('Q23').value = carIssuesDate ? moment(data.carIssuesDate).format("DD MMM yyyy") : ""
                 worksheet.getCell('U23').value = carExpiredDate ? moment(data.carExpiredDate).format("DD MMM yyyy") : ""
-                worksheet.getCell('B24').value = data.chkMotorcycle1 == "Y" ? "Yes / ได้" : "No / ไม่ได้"
-                worksheet.getCell('E24').value = data.chkMotorcycle2 == "Y" ? "Yes / มี" : "No / ไม่มี"
+                worksheet.getCell('B24').value = data.chkMotorcycle1 == "Y" ? "Yes / ได้" : "No/ไม่ได้"
+                worksheet.getCell('E24').value = data.chkMotorcycle2 == "Y" ? "Yes / มี" : "No/ ม่มี"
                 worksheet.getCell('G24').value = data.chkMotorcycle3 == "Y" ? "Yes / มี" : "No / ไม่มี"
                 worksheet.getCell('J24').value = data.motorcycleLicenseno
 
