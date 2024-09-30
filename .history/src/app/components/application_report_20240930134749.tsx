@@ -175,11 +175,11 @@ const Report = (props: any) => {
                 worksheet.getCell('U101').value = data.writingOTH == "G" ? "Good" : data.writingOTH == "F" ? "Fair" : data.writingOTH == "P" ? "Poor" : "";
 
                 worksheet.getCell('F107').value = data.toeicScore
-                worksheet.getCell('U107').value = data.msword == "A" ? "Advanced / ขั้นสูง" : data.msword == "I" ? "Intermediate / ระดับกลาง" : data.msword == "B" ? "Basic / พื้นฐาน" : data.msword == "AAT" ? "Advanced and able to training to other / ขั้นสูงและสอนคนอื่นได้" : "";
+                worksheet.getCell('U107').value = data.msword == "A" ? "Advanced / ขั้นสูง" : data.msword == "I" ? "Intermediate / ระดับกลาง" : data.msword == "B" ? "Basic / พื้นฐาน" : data.msword == "AAT" ? "Advanced and able to training to other / ขั้นสูงและสอนคนอื่นได้";
                 worksheet.getCell('A108').value = data.otherLanguageTest
                 worksheet.getCell('F108').value = data.ieltsScore
-                worksheet.getCell('U108').value = data.msexcel == "A" ? "Advanced / ขั้นสูง" : data.msexcel == "I" ? "Intermediate / ระดับกลาง" : data.msexcel == "B" ? "Basic / พื้นฐาน" : data.msexcel == "AAT" ? "Advanced and able to training to other / ขั้นสูงและสอนคนอื่นได้" : "";
-                worksheet.getCell('U109').value = data.mspowerpoint == "A" ? "Advanced / ขั้นสูง" : data.mspowerpoint == "I" ? "Intermediate / ระดับกลาง" : data.mspowerpoint == "B" ? "Basic / พื้นฐาน" : data.mspowerpoint == "AAT" ? "Advanced and able to training to other / ขั้นสูงและสอนคนอื่นได้" : "";
+                worksheet.getCell('U108').value = data.msexcel == "A" ? "Advanced / ขั้นสูง" : data.msword == "I" ? "Intermediate / ระดับกลาง" : data.msword == "B" ? "Basic / พื้นฐาน" : data.msword == "AAT" ? "Advanced and able to training to other / ขั้นสูงและสอนคนอื่นได้";
+                worksheet.getCell('U109').value = data.mspowerpoint == "A" ? "Advanced / ขั้นสูง" : data.msword == "I" ? "Intermediate / ระดับกลาง" : data.msword == "B" ? "Basic / พื้นฐาน" :  "Advanced and able to training to other / ขั้นสูงและสอนคนอื่นได้";
 
                 worksheet.getCell('R114').value = data.workUpcountry == "Y" ? "Yes" : "No"
                 worksheet.getCell('R115').value = data.overseastripandTraining == "Y" ? "Yes" : "No"
