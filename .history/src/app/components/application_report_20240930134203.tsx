@@ -33,8 +33,8 @@ const Report = (props: any) => {
                     extension: 'jpeg',
                 });
                 worksheet.addImage(imageId, {
-                    tl: { col: 20.7, row: 7 },
-                    ext: { width: 95, height: 120 }
+                    tl: { col: 20.7, row: 8.13 },
+                    ext: { width: 85, height: 120 }
                 });
 
                 worksheet.getCell('B13').value = data.prefixth
@@ -243,11 +243,12 @@ const Report = (props: any) => {
 
     }
 
+
     return (
         <>
             {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
-            <a onClick={(e) => downloadReport(e)} className="inline-flex text-purple-800 bg-purple-200 hover:bg-purple-300 font-medium px-3 py-3 rounded-md text-xs text-center cursor-pointer">
-                <SiMicrosoftexcel className="inline-flex w-4 h-4 text-purple-800 mr-2" /> Application Form
+            <a onClick={(e) => downloadReport(e)} className="inline-flex bg-purple-600 hover:bg-purple-700 font-medium px-3 py-3 text-white rounded-md text-xs text-center cursor-pointer">
+                <SiMicrosoftexcel className="inline-flex w-4 h-4 text-white mr-2" /> application report
             </a>
         </>
     );

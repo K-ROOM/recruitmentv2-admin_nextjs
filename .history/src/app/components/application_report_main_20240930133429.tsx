@@ -7,7 +7,7 @@ const Report = (props: any) => {
     const { data } = props;
 
     const downloadReport = async (e: React.FormEvent) => {
-
+        console.log('0');
         fetch("/RMS-FORMv2.xlsx")
             .then(response => response.arrayBuffer())
             .then(arrayBuffer => {
@@ -22,7 +22,8 @@ const Report = (props: any) => {
             })
             .then(workbook => {
                 //ชีตแรก
-                const worksheet: any = workbook.getWorksheet('Form');
+                console.log('1');
+                const worksheet: any = workbook.getWorksheet(1);
                 worksheet.getCell('E8').value = moment(data.registrationDate).format("DD MMM yyyy")
                 worksheet.getCell('E9').value = data.sourceOfRecruitment
                 worksheet.getCell('O9').value = moment(data.startingDate).format("DD MMM yyyy")
@@ -33,10 +34,10 @@ const Report = (props: any) => {
                     extension: 'jpeg',
                 });
                 worksheet.addImage(imageId, {
-                    tl: { col: 20.7, row: 7 },
-                    ext: { width: 95, height: 120 }
+                    tl: { col: 20.7, row: 8.13 },
+                    ext: { width: 105, height: 140 }
                 });
-
+                console.log('2');
                 worksheet.getCell('B13').value = data.prefixth
                 worksheet.getCell('I13').value = data.firstnameth + "  " + data.lastnameth
                 worksheet.getCell('U13').value = data.nicknameth
@@ -63,7 +64,7 @@ const Report = (props: any) => {
                 worksheet.getCell('E23').value = data.chkcar2 == "Y" ? "Yes / มี" : "No / ไม่มี"
                 worksheet.getCell('G23').value = data.chkcar3 == "Y" ? "Yes / มี" : "No / ไม่มี"
                 worksheet.getCell('J23').value = data.carLicenseno
-
+                console.log('3');
                 const carIssuesDate = data.carIssuesDate;
                 const carExpiredDate = data.carExpiredDate;
                 worksheet.getCell('Q23').value = carIssuesDate ? moment(data.carIssuesDate).format("DD MMM yyyy") : ""

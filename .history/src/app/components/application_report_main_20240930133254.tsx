@@ -22,7 +22,8 @@ const Report = (props: any) => {
             })
             .then(workbook => {
                 //ชีตแรก
-                const worksheet: any = workbook.getWorksheet('Form');
+                console.log('1');
+                const worksheet: any = workbook.getWorksheet(1);
                 worksheet.getCell('E8').value = moment(data.registrationDate).format("DD MMM yyyy")
                 worksheet.getCell('E9').value = data.sourceOfRecruitment
                 worksheet.getCell('O9').value = moment(data.startingDate).format("DD MMM yyyy")
@@ -33,8 +34,8 @@ const Report = (props: any) => {
                     extension: 'jpeg',
                 });
                 worksheet.addImage(imageId, {
-                    tl: { col: 20.7, row: 7 },
-                    ext: { width: 95, height: 120 }
+                    tl: { col: 20.7, row: 8.13 },
+                    ext: { width: 105, height: 140 }
                 });
 
                 worksheet.getCell('B13').value = data.prefixth

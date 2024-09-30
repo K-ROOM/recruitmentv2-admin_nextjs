@@ -34,7 +34,7 @@ const Report = (props: any) => {
                 });
                 worksheet.addImage(imageId, {
                     tl: { col: 20.7, row: 7 },
-                    ext: { width: 95, height: 120 }
+                    ext: { width: 85, height: 120 }
                 });
 
                 worksheet.getCell('B13').value = data.prefixth
