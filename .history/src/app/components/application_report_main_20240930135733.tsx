@@ -199,12 +199,12 @@ const Report = (props: any) => {
 
                 worksheet.getCell('A127').value = data.joinOurCompany
 
-                worksheet.getCell('A134').value = data.firstnameRef ? data.firstnameRef + "  " + data.lastnameRef : "";
+                worksheet.getCell('A134').value = data.firstnameRef + "  " + data.lastnameRef
                 worksheet.getCell('F134').value = data.addressRef
                 worksheet.getCell('Q134').value = data.telephoneRef
                 worksheet.getCell('U134').value = data.occupationRef
 
-                worksheet.getCell('A140').value = data.firstnameEmergency + "  " + data.lastnameEmergency
+                worksheet.getCell('A140').value = data.firstnameEmergency ? data.firstnameEmergency + "  " + data.lastnameEmergency : "";
                 worksheet.getCell('F140').value = data.addressEmergency
                 worksheet.getCell('Q140').value = data.telnoEmergency
                 worksheet.getCell('U140').value = data.relationshipEmergency
@@ -243,12 +243,11 @@ const Report = (props: any) => {
 
     }
 
-
     return (
         <>
             {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
-            <a onClick={(e) => downloadReport(e)} className="inline-flex bg-purple-600 hover:bg-purple-700 font-medium px-3 py-3 text-white rounded-md text-xs text-center cursor-pointer">
-                <SiMicrosoftexcel className="inline-flex w-4 h-4 text-white mr-2" /> application report
+            <a onClick={(e) => downloadReport(e)} className="inline-flex text-purple-800 bg-purple-200 hover:bg-purple-300 font-medium px-3 py-3 rounded-md text-xs text-center cursor-pointer">
+                <SiMicrosoftexcel className="inline-flex w-4 h-4 text-purple-800 mr-2" /> Application Form
             </a>
         </>
     );

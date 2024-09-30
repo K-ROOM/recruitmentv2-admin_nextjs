@@ -193,9 +193,9 @@ const Report = (props: any) => {
                 worksheet.getCell('R120').value = data.workingOverTime == "Y" ? "Yes" : "No"
                 worksheet.getCell('R121').value = data.usedtoWorkinNEC == "Y" ? "Yes" : "No"
                 worksheet.getCell('R122').value = data.foRinNEC == "Y" ? "Yes" : "No"
-                worksheet.getCell('T122').value = data.foRinNECname ? "ชื่อ-สกุล: " + data.foRinNECname : "";
-                worksheet.getCell('T123').value = data.foRinNECposition ? "ตำแหน่ง: " + data.foRinNECposition : "";
-                worksheet.getCell('T124').value = data.foRinNECrelationship ? "ความสัมพันธ์: " + data.foRinNECrelationship : "";
+                worksheet.getCell('T122').value = "ชื่อ-สกุล: " + data.foRinNECname
+                worksheet.getCell('T123').value = "ตำแหน่ง: " + data.foRinNECposition
+                worksheet.getCell('T124').value = "ความสัมพันธ์: " + data.foRinNECrelationship
 
                 worksheet.getCell('A127').value = data.joinOurCompany
 

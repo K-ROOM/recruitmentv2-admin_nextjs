@@ -193,13 +193,13 @@ const Report = (props: any) => {
                 worksheet.getCell('R120').value = data.workingOverTime == "Y" ? "Yes" : "No"
                 worksheet.getCell('R121').value = data.usedtoWorkinNEC == "Y" ? "Yes" : "No"
                 worksheet.getCell('R122').value = data.foRinNEC == "Y" ? "Yes" : "No"
-                worksheet.getCell('T122').value = data.foRinNECname ? "ชื่อ-สกุล: " + data.foRinNECname : "";
-                worksheet.getCell('T123').value = data.foRinNECposition ? "ตำแหน่ง: " + data.foRinNECposition : "";
-                worksheet.getCell('T124').value = data.foRinNECrelationship ? "ความสัมพันธ์: " + data.foRinNECrelationship : "";
+                worksheet.getCell('T122').value = "ชื่อ-สกุล: " + data.foRinNECname != "" ? : ""
+                worksheet.getCell('T123').value = "ตำแหน่ง: " + data.foRinNECposition
+                worksheet.getCell('T124').value = "ความสัมพันธ์: " + data.foRinNECrelationship
 
                 worksheet.getCell('A127').value = data.joinOurCompany
 
-                worksheet.getCell('A134').value = data.firstnameRef ? data.firstnameRef + "  " + data.lastnameRef : "";
+                worksheet.getCell('A134').value = data.firstnameRef + "  " + data.lastnameRef
                 worksheet.getCell('F134').value = data.addressRef
                 worksheet.getCell('Q134').value = data.telephoneRef
                 worksheet.getCell('U134').value = data.occupationRef
@@ -243,12 +243,11 @@ const Report = (props: any) => {
 
     }
 
-
     return (
         <>
             {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
-            <a onClick={(e) => downloadReport(e)} className="inline-flex bg-purple-600 hover:bg-purple-700 font-medium px-3 py-3 text-white rounded-md text-xs text-center cursor-pointer">
-                <SiMicrosoftexcel className="inline-flex w-4 h-4 text-white mr-2" /> application report
+            <a onClick={(e) => downloadReport(e)} className="inline-flex text-purple-800 bg-purple-200 hover:bg-purple-300 font-medium px-3 py-3 rounded-md text-xs text-center cursor-pointer">
+                <SiMicrosoftexcel className="inline-flex w-4 h-4 text-purple-800 mr-2" /> Application Form
             </a>
         </>
     );
