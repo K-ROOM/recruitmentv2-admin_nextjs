@@ -22,7 +22,7 @@ const Report = (props: any) => {
             })
             .then(workbook => {
                 //ชีตแรก
-                const worksheet: any = workbook.getWorksheet(1);
+                const worksheet: any = workbook.getWorksheet(0);
                 worksheet.getCell('E8').value = moment(data.registrationDate).format("DD MMM yyyy")
                 worksheet.getCell('E9').value = data.sourceOfRecruitment
                 worksheet.getCell('O9').value = moment(data.startingDate).format("DD MMM yyyy")
@@ -211,8 +211,8 @@ const Report = (props: any) => {
 
                 worksheet.getCell('A144').value = data.presentJobOrProject
 
-                // worksheet.getCell('A153').value = data.inquiriesFromPreEmp == "Y" ? "✓" : ""
-                // worksheet.getCell('E153').value = data.inquiriesFromPreEmp == "N" ? "✓" : ""
+                worksheet.getCell('A153').value = data.inquiriesFromPreEmp == "Y" ? "✓" : ""
+                worksheet.getCell('E153').value = data.inquiriesFromPreEmp == "N" ? "✓" : ""
 
                 const registrationDate = data.registrationDate;
                 worksheet.getCell('T179').value = registrationDate ? moment(data.registrationDate).format("DD MMM yyyy") : ""
