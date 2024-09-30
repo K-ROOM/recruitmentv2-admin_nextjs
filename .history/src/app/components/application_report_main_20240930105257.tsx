@@ -175,11 +175,11 @@ const Report = (props: any) => {
                 worksheet.getCell('U101').value = data.writingOTH == "G" ? "Good" : data.writingOTH == "F" ? "Fair" : data.writingOTH == "P" ? "Poor" : "";
 
                 worksheet.getCell('F107').value = data.toeicScore
-                worksheet.getCell('U107').value = data.msword == "A" ? "Advanced / ขั้นสูง" : data.msword == "I" ? "Intermediate / ระดับกลาง" : data.msword == "B" ? "Basic / พื้นฐาน" : "Advanced and able to training to other / ขั้นสูงและสอนคนอื่นได้";
+                worksheet.getCell('U107').value = data.msword == "G" ? "Advanced/ขั้นสูง" : data.msword == "F" ? "Intermediate/ระดับกลาง" : data.msword == "P" ? "Basic/พื้นฐาน" : "";
                 worksheet.getCell('A108').value = data.otherLanguageTest
                 worksheet.getCell('F108').value = data.ieltsScore
-                worksheet.getCell('U108').value = data.msexcel == "A" ? "Advanced / ขั้นสูง" : data.msword == "I" ? "Intermediate / ระดับกลาง" : data.msword == "B" ? "Basic / พื้นฐาน" : "Advanced and able to training to other / ขั้นสูงและสอนคนอื่นได้";
-                worksheet.getCell('U109').value = data.mspowerpoint == "A" ? "Advanced / ขั้นสูง" : data.msword == "I" ? "Intermediate / ระดับกลาง" : data.msword == "B" ? "Basic / พื้นฐาน" : "Advanced and able to training to other / ขั้นสูงและสอนคนอื่นได้";
+                worksheet.getCell('U108').value = data.msexcel == "G" ? "Advanced/ขั้นสูง" : data.msword == "F" ? "Intermediate/ระดับกลาง" : data.msword == "P" ? "Basic/พื้นฐาน" : "";
+                worksheet.getCell('U109').value = data.mspowerpoint == "G" ? "Advanced/ขั้นสูง" : data.msword == "F" ? "Intermediate/ระดับกลาง" : data.msword == "P" ? "Basic/พื้นฐาน" : "";
 
                 worksheet.getCell('R114').value = data.workUpcountry == "Y" ? "Yes" : "No"
                 worksheet.getCell('R115').value = data.overseastripandTraining == "Y" ? "Yes" : "No"
@@ -202,20 +202,19 @@ const Report = (props: any) => {
                 worksheet.getCell('A134').value = data.firstnameRef + "  " + data.lastnameRef
                 worksheet.getCell('F134').value = data.addressRef
                 worksheet.getCell('Q134').value = data.telephoneRef
-                worksheet.getCell('U134').value = data.occupationRef
+                worksheet.getCell('U141').value = data.occupationRef
 
-                worksheet.getCell('A140').value = data.firstnameEmergency + "  " + data.lastnameEmergency
-                worksheet.getCell('F140').value = data.addressEmergency
-                worksheet.getCell('Q140').value = data.telnoEmergency
-                worksheet.getCell('U140').value = data.relationshipEmergency
+                worksheet.getCell('A148').value = data.firstnameEmergency + "  " + data.lastnameEmergency
+                worksheet.getCell('F148').value = data.addressEmergency
+                worksheet.getCell('Q148').value = data.telnoEmergency
+                worksheet.getCell('U148').value = data.relationshipEmergency
 
-                worksheet.getCell('A144').value = data.presentJobOrProject
+                worksheet.getCell('A152').value = data.presentJobOrProject
 
-                worksheet.getCell('A153').value = data.inquiriesFromPreEmp == "Y" ? "✓" : ""
-                worksheet.getCell('E153').value = data.inquiriesFromPreEmp == "N" ? "✓" : ""
+                worksheet.getCell('M159').value = data.inquiriesFromPreEmp == "Y" ? "Yes" : "No"
 
                 const registrationDate = data.registrationDate;
-                worksheet.getCell('T179').value = registrationDate ? moment(data.registrationDate).format("DD MMM yyyy") : ""
+                worksheet.getCell('T190').value = registrationDate ? moment(data.registrationDate).format("DD MMM yyyy") : ""
                 // กำหนดค่าของเซลล์
 
                 // แปลง workbook กลับเป็น blob
@@ -243,12 +242,11 @@ const Report = (props: any) => {
 
     }
 
-
     return (
         <>
             {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
-            <a onClick={(e) => downloadReport(e)} className="inline-flex bg-purple-600 hover:bg-purple-700 font-medium px-3 py-3 text-white rounded-md text-xs text-center cursor-pointer">
-                <SiMicrosoftexcel className="inline-flex w-4 h-4 text-white mr-2" /> application report
+            <a onClick={(e) => downloadReport(e)} className="inline-flex text-purple-800 bg-purple-200 hover:bg-purple-300 font-medium px-3 py-3 rounded-md text-xs text-center cursor-pointer">
+                <SiMicrosoftexcel className="inline-flex w-4 h-4 text-purple-800 mr-2" /> Application Form
             </a>
         </>
     );

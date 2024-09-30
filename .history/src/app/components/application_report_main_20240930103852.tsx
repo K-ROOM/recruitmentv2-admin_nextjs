@@ -157,65 +157,64 @@ const Report = (props: any) => {
                     worksheet.getCell('M' + (88 + i)).value = data.rmsCertificate[i].certificateDetail
                 }
 
-                worksheet.getCell('A94').value = data.interestsandHobbies
-                worksheet.getCell('E99').value = data.listeningTH == "G" ? "Good" : data.listeningTH == "F" ? "Fair" : data.listeningTH == "P" ? "Poor" : "";
-                worksheet.getCell('J99').value = data.speakingTH == "G" ? "Good" : data.speakingTH == "F" ? "Fair" : data.speakingTH == "P" ? "Poor" : "";
-                worksheet.getCell('P99').value = data.readingTH == "G" ? "Good" : data.readingTH == "F" ? "Fair" : data.readingTH == "P" ? "Poor" : "";
-                worksheet.getCell('U99').value = data.writingTH == "G" ? "Good" : data.writingTH == "F" ? "Fair" : data.writingTH == "P" ? "Poor" : "";
+                worksheet.getCell('A102').value = data.interestsandHobbies
+                worksheet.getCell('E108').value = data.listeningTH == "G" ? "Good" : data.listeningTH == "F" ? "Fair" : data.listeningTH == "P" ? "Poor" : "";
+                worksheet.getCell('J108').value = data.speakingTH == "G" ? "Good" : data.speakingTH == "F" ? "Fair" : data.speakingTH == "P" ? "Poor" : "";
+                worksheet.getCell('P108').value = data.readingTH == "G" ? "Good" : data.readingTH == "F" ? "Fair" : data.readingTH == "P" ? "Poor" : "";
+                worksheet.getCell('U108').value = data.writingTH == "G" ? "Good" : data.writingTH == "F" ? "Fair" : data.writingTH == "P" ? "Poor" : "";
 
-                worksheet.getCell('E100').value = data.listeningEN == "G" ? "Good" : data.listeningEN == "F" ? "Fair" : data.listeningEN == "P" ? "Poor" : "";
-                worksheet.getCell('J100').value = data.speakingEN == "G" ? "Good" : data.speakingEN == "F" ? "Fair" : data.speakingEN == "P" ? "Poor" : "";
-                worksheet.getCell('P100').value = data.readingEN == "G" ? "Good" : data.readingEN == "F" ? "Fair" : data.readingEN == "P" ? "Poor" : "";
-                worksheet.getCell('U100').value = data.writingEN == "G" ? "Good" : data.writingEN == "F" ? "Fair" : data.writingEN == "P" ? "Poor" : "";
+                worksheet.getCell('E109').value = data.listeningEN == "G" ? "Good" : data.listeningEN == "F" ? "Fair" : data.listeningEN == "P" ? "Poor" : "";
+                worksheet.getCell('J109').value = data.speakingEN == "G" ? "Good" : data.speakingEN == "F" ? "Fair" : data.speakingEN == "P" ? "Poor" : "";
+                worksheet.getCell('P109').value = data.readingEN == "G" ? "Good" : data.readingEN == "F" ? "Fair" : data.readingEN == "P" ? "Poor" : "";
+                worksheet.getCell('U109').value = data.writingEN == "G" ? "Good" : data.writingEN == "F" ? "Fair" : data.writingEN == "P" ? "Poor" : "";
 
-                worksheet.getCell('A101').value = data.languageOTH
-                worksheet.getCell('E101').value = data.listeningOTH == "G" ? "Good" : data.listeningOTH == "F" ? "Fair" : data.listeningOTH == "P" ? "Poor" : "";
-                worksheet.getCell('J101').value = data.speakingOTH == "G" ? "Good" : data.speakingOTH == "F" ? "Fair" : data.speakingOTH == "P" ? "Poor" : "";
-                worksheet.getCell('P101').value = data.readingOTH == "G" ? "Good" : data.readingOTH == "F" ? "Fair" : data.readingOTH == "P" ? "Poor" : "";
-                worksheet.getCell('U101').value = data.writingOTH == "G" ? "Good" : data.writingOTH == "F" ? "Fair" : data.writingOTH == "P" ? "Poor" : "";
+                worksheet.getCell('A110').value = data.languageOTH
+                worksheet.getCell('E110').value = data.listeningOTH == "G" ? "Good" : data.listeningOTH == "F" ? "Fair" : data.listeningOTH == "P" ? "Poor" : "";
+                worksheet.getCell('J110').value = data.speakingOTH == "G" ? "Good" : data.speakingOTH == "F" ? "Fair" : data.speakingOTH == "P" ? "Poor" : "";
+                worksheet.getCell('P110').value = data.readingOTH == "G" ? "Good" : data.readingOTH == "F" ? "Fair" : data.readingOTH == "P" ? "Poor" : "";
+                worksheet.getCell('U110').value = data.writingOTH == "G" ? "Good" : data.writingOTH == "F" ? "Fair" : data.writingOTH == "P" ? "Poor" : "";
 
-                worksheet.getCell('F107').value = data.toeicScore
-                worksheet.getCell('U107').value = data.msword == "A" ? "Advanced / ขั้นสูง" : data.msword == "I" ? "Intermediate / ระดับกลาง" : data.msword == "B" ? "Basic / พื้นฐาน" : "Advanced and able to training to other / ขั้นสูงและสอนคนอื่นได้";
-                worksheet.getCell('A108').value = data.otherLanguageTest
-                worksheet.getCell('F108').value = data.ieltsScore
-                worksheet.getCell('U108').value = data.msexcel == "A" ? "Advanced / ขั้นสูง" : data.msword == "I" ? "Intermediate / ระดับกลาง" : data.msword == "B" ? "Basic / พื้นฐาน" : "Advanced and able to training to other / ขั้นสูงและสอนคนอื่นได้";
-                worksheet.getCell('U109').value = data.mspowerpoint == "A" ? "Advanced / ขั้นสูง" : data.msword == "I" ? "Intermediate / ระดับกลาง" : data.msword == "B" ? "Basic / พื้นฐาน" : "Advanced and able to training to other / ขั้นสูงและสอนคนอื่นได้";
+                worksheet.getCell('F116').value = data.toeicScore
+                worksheet.getCell('U116').value = data.msword == "G" ? "Good" : data.msword == "F" ? "Fair" : data.msword == "P" ? "Poor" : "";
+                worksheet.getCell('A117').value = data.otherLanguageTest
+                worksheet.getCell('F117').value = data.ieltsScore
+                worksheet.getCell('U117').value = data.msexcel == "G" ? "Good" : data.msexcel == "F" ? "Fair" : data.msexcel == "P" ? "Poor" : "";
+                worksheet.getCell('U118').value = data.mspowerpoint == "G" ? "Good" : data.mspowerpoint == "F" ? "Fair" : data.mspowerpoint == "P" ? "Poor" : "";
 
-                worksheet.getCell('R114').value = data.workUpcountry == "Y" ? "Yes" : "No"
-                worksheet.getCell('R115').value = data.overseastripandTraining == "Y" ? "Yes" : "No"
-                worksheet.getCell('R116').value = data.underlyingDisease == "Y" ? "Yes" : "No"
-                worksheet.getCell('T116').value = data.underlyingDiseaseDetail
-                worksheet.getCell('R117').value = data.physicalDisability == "Y" ? "Yes" : "No"
-                worksheet.getCell('T117').value = data.physicalDisabilityDetail
-                worksheet.getCell('R118').value = data.lawsuitorConvicted == "Y" ? "Yes" : "No"
-                worksheet.getCell('T118').value = data.lawsuitorConvictedDetail
-                worksheet.getCell('R119').value = data.sackedFromJob == "Y" ? "Yes" : "No"
-                worksheet.getCell('R120').value = data.workingOverTime == "Y" ? "Yes" : "No"
-                worksheet.getCell('R121').value = data.usedtoWorkinNEC == "Y" ? "Yes" : "No"
-                worksheet.getCell('R122').value = data.foRinNEC == "Y" ? "Yes" : "No"
-                worksheet.getCell('T122').value = "ชื่อ-สกุล: " + data.foRinNECname
-                worksheet.getCell('T123').value = "ตำแหน่ง: " + data.foRinNECposition
-                worksheet.getCell('T124').value = "ความสัมพันธ์: " + data.foRinNECrelationship
+                worksheet.getCell('R121').value = data.workUpcountry == "Y" ? "Yes" : "No"
+                worksheet.getCell('R122').value = data.overseastripandTraining == "Y" ? "Yes" : "No"
+                worksheet.getCell('R123').value = data.underlyingDisease == "Y" ? "Yes" : "No"
+                worksheet.getCell('T123').value = data.underlyingDiseaseDetail
+                worksheet.getCell('R124').value = data.physicalDisability == "Y" ? "Yes" : "No"
+                worksheet.getCell('T124').value = data.physicalDisabilityDetail
+                worksheet.getCell('R125').value = data.lawsuitorConvicted == "Y" ? "Yes" : "No"
+                worksheet.getCell('T125').value = data.lawsuitorConvictedDetail
+                worksheet.getCell('R126').value = data.sackedFromJob == "Y" ? "Yes" : "No"
+                worksheet.getCell('R127').value = data.workingOverTime == "Y" ? "Yes" : "No"
+                worksheet.getCell('R128').value = data.usedtoWorkinNEC == "Y" ? "Yes" : "No"
+                worksheet.getCell('R129').value = data.foRinNEC == "Y" ? "Yes" : "No"
+                worksheet.getCell('T129').value = data.foRinNECname
+                worksheet.getCell('T130').value = data.foRinNECposition
+                worksheet.getCell('T131').value = data.foRinNECrelationship
 
-                worksheet.getCell('A127').value = data.joinOurCompany
+                worksheet.getCell('A133').value = data.joinOurCompany
 
-                worksheet.getCell('A134').value = data.firstnameRef + "  " + data.lastnameRef
-                worksheet.getCell('F134').value = data.addressRef
-                worksheet.getCell('Q134').value = data.telephoneRef
-                worksheet.getCell('U134').value = data.occupationRef
+                worksheet.getCell('A141').value = data.firstnameRef + "  " + data.lastnameRef
+                worksheet.getCell('F141').value = data.addressRef
+                worksheet.getCell('Q141').value = data.telephoneRef
+                worksheet.getCell('U141').value = data.occupationRef
 
-                worksheet.getCell('A140').value = data.firstnameEmergency + "  " + data.lastnameEmergency
-                worksheet.getCell('F140').value = data.addressEmergency
-                worksheet.getCell('Q140').value = data.telnoEmergency
-                worksheet.getCell('U140').value = data.relationshipEmergency
+                worksheet.getCell('A148').value = data.firstnameEmergency + "  " + data.lastnameEmergency
+                worksheet.getCell('F148').value = data.addressEmergency
+                worksheet.getCell('Q148').value = data.telnoEmergency
+                worksheet.getCell('U148').value = data.relationshipEmergency
 
-                worksheet.getCell('A144').value = data.presentJobOrProject
+                worksheet.getCell('A152').value = data.presentJobOrProject
 
-                worksheet.getCell('A153').value = data.inquiriesFromPreEmp == "Y" ? "✓" : ""
-                worksheet.getCell('E153').value = data.inquiriesFromPreEmp == "N" ? "✓" : ""
+                worksheet.getCell('M159').value = data.inquiriesFromPreEmp == "Y" ? "Yes" : "No"
 
                 const registrationDate = data.registrationDate;
-                worksheet.getCell('T179').value = registrationDate ? moment(data.registrationDate).format("DD MMM yyyy") : ""
+                worksheet.getCell('T190').value = registrationDate ? moment(data.registrationDate).format("DD MMM yyyy") : ""
                 // กำหนดค่าของเซลล์
 
                 // แปลง workbook กลับเป็น blob
@@ -243,12 +242,11 @@ const Report = (props: any) => {
 
     }
 
-
     return (
         <>
             {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
-            <a onClick={(e) => downloadReport(e)} className="inline-flex bg-purple-600 hover:bg-purple-700 font-medium px-3 py-3 text-white rounded-md text-xs text-center cursor-pointer">
-                <SiMicrosoftexcel className="inline-flex w-4 h-4 text-white mr-2" /> application report
+            <a onClick={(e) => downloadReport(e)} className="inline-flex text-purple-800 bg-purple-200 hover:bg-purple-300 font-medium px-3 py-3 rounded-md text-xs text-center cursor-pointer">
+                <SiMicrosoftexcel className="inline-flex w-4 h-4 text-purple-800 mr-2" /> Application Form
             </a>
         </>
     );

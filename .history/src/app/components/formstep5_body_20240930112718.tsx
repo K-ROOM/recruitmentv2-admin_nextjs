@@ -555,7 +555,7 @@ const Form5_Body = ({ session, header }: any) => {
                                 <option value="B">Basic / พื้นฐาน</option>
                                 <option value="I">Intermediate / ระดับกลาง</option>
                                 <option value="A">Advanced / ขั้นสูง </option>
-                                <option value="AAT">Advanced and able to training to other / ขั้นสูงและสอนคนอื่นได้</option>
+                                <option value="AA">Advanced and able to training to other / ขั้นสูงและสอนคนอื่นได้</option>
                             </select>
                         </div>
                     </div>
@@ -570,10 +570,9 @@ const Form5_Body = ({ session, header }: any) => {
                             <p className="text-title">Level</p>
                             <select id="msexcel" name="msexcel" value={formData.msexcel} className="input-formcontrol px-2" onChange={handleChangeHeader} required>
                                 <option value="">Select</option>
-                                <option value="B">Basic / พื้นฐาน</option>
-                                <option value="I">Intermediate / ระดับกลาง</option>
-                                <option value="A">Advanced / ขั้นสูง </option>
-                                <option value="AAT">Advanced and able to training to other / ขั้นสูงและสอนคนอื่นได้</option>
+                                <option value="P">Poor / อ่อน</option>
+                                <option value="F">Fair / พอใช้</option>
+                                <option value="G">Good / ดี</option>
                             </select>
                         </div>
                     </div>
@@ -588,10 +587,9 @@ const Form5_Body = ({ session, header }: any) => {
                             <p className="text-title">Level</p>
                             <select id="mspowerpoint" name="mspowerpoint" value={formData.mspowerpoint} className="input-formcontrol px-2" onChange={handleChangeHeader} required>
                                 <option value="">Select</option>
-                                <option value="B">Basic / พื้นฐาน</option>
-                                <option value="I">Intermediate / ระดับกลาง</option>
-                                <option value="A">Advanced / ขั้นสูง </option>
-                                <option value="AAT">Advanced and able to training to other / ขั้นสูงและสอนคนอื่นได้</option>
+                                <option value="P">Poor / อ่อน</option>
+                                <option value="F">Fair / พอใช้</option>
+                                <option value="G">Good / ดี</option>
                             </select>
                         </div>
                     </div>
