@@ -136,8 +136,9 @@ const Report = (props: any) => {
                     worksheet.mergeCells('A70:V75');
                     worksheet.getCell('A70').value = "นักศึกษาจบใหม่ / New Graduate";
                     worksheet.getCell('A70').alignment = { vertical: 'middle', horizontal: 'center' };
-                    worksheet.getCell('A70').font = { size: 16, bold: true };
                 }
+
+                // worksheet.getCell('B71').value = data.newGraduate == "Y" ? "นักศึกษาจบใหม่ / New Graduate" : ""
 
                 for (let i = 0; i < data.rmsWorkexperience.length; i++) {
                     worksheet.getCell('A' + (70 + (i * 2))).value = moment(data.rmsWorkexperience[i].workExpFrom).format("MMM yyyy")

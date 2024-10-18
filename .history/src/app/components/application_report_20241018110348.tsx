@@ -132,11 +132,9 @@ const Report = (props: any) => {
                 }
 
                 if (data.newGraduate === "Y") {
-                    worksheet.unMergeCells('A70:V75');
-                    worksheet.mergeCells('A70:V75');
-                    worksheet.getCell('A70').value = "นักศึกษาจบใหม่ / New Graduate";
-                    worksheet.getCell('A70').alignment = { vertical: 'middle', horizontal: 'center' };
-                    worksheet.getCell('A70').font = { size: 16, bold: true };
+                    worksheet.mergeCells('A70:V70'); // Merge row 70 จากคอลัมน์ A ถึง V
+                    worksheet.mergeCells('A71:V71'); // Merge row 71 จากคอลัมน์ A ถึง V
+                    worksheet.getCell('B71').value = "นักศึกษาจบใหม่ / New Graduate";
                 }
 
                 for (let i = 0; i < data.rmsWorkexperience.length; i++) {
@@ -249,11 +247,12 @@ const Report = (props: any) => {
 
     }
 
+
     return (
         <>
             {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
-            <a onClick={(e) => downloadReport(e)} className="inline-flex text-purple-800 bg-purple-200 hover:bg-purple-300 font-medium px-3 py-3 rounded-md text-xs text-center cursor-pointer">
-                <SiMicrosoftexcel className="inline-flex w-4 h-4 text-purple-800 mr-2" /> Application Form
+            <a onClick={(e) => downloadReport(e)} className="inline-flex bg-purple-600 hover:bg-purple-700 font-medium px-3 py-3 text-white rounded-md text-xs text-center cursor-pointer">
+                <SiMicrosoftexcel className="inline-flex w-4 h-4 text-white mr-2" /> application report
             </a>
         </>
     );

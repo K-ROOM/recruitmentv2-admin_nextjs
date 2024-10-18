@@ -361,7 +361,7 @@ const Form3_Body = ({ session, header }: any) => {
                                             <div className="grid grid-cols-12 gap-2 mt-6">
                                                 <div className="col-span-3 mr-2">
                                                     <p className="text-title">Company</p>
-                                                    <input type="text" id="company" name="company" value={e.company} maxLength={50} onChange={(e) => handleChangeInputWorkExperience(e, index)} className="input-formcontrol" required />
+                                                    <input type="text" id="company" name="company" value={e.company} maxLength={100} onChange={(e) => handleChangeInputWorkExperience(e, index)} className="input-formcontrol" required />
                                                 </div>
 
                                                 <div className="col-span-2 mr-2">
@@ -490,12 +490,12 @@ const Form3_Body = ({ session, header }: any) => {
                                             <div className="grid grid-cols-12 gap-2 mt-6">
                                                 <div className="col-span-3 mr-2">
                                                     <label className="text-title">Company</label>
-                                                    <input type="text" id="internshipCompany" name="internshipCompany" value={e.internshipCompany} maxLength={100} onChange={(e) => handleChangeInputInternship(e, index)} className="input-formcontrol" required />
+                                                    <input type="text" id="internshipCompany" name="internshipCompany" value={e.internshipCompany} maxLength={50} onChange={(e) => handleChangeInputInternship(e, index)} className="input-formcontrol" required />
                                                 </div>
 
                                                 <div className="col-span-2 mr-2">
                                                     <label className="text-title">Business Type</label>
-                                                    <input type="text" id="internshipTypeofBusiness" name="internshipTypeofBusiness" value={e.internshipTypeofBusiness} maxLength={100} onChange={(e) => handleChangeInputInternship(e, index)} className="input-formcontrol" required />
+                                                    <input type="text" id="internshipTypeofBusiness" name="internshipTypeofBusiness" value={e.internshipTypeofBusiness} maxLength={50} onChange={(e) => handleChangeInputInternship(e, index)} className="input-formcontrol" required />
                                                 </div>
 
                                                 <div className="col-span-2 mr-2">

@@ -131,12 +131,27 @@ const Report = (props: any) => {
                     worksheet.getCell('T' + (64 + i)).value = data.rmsInternship[i].internshipTypeofBusiness
                 }
 
+                worksheet.unMergeCells('A70:V75');
+                worksheet.mergeCells('A70:V75');
                 if (data.newGraduate === "Y") {
-                    worksheet.unMergeCells('A70:V75');
-                    worksheet.mergeCells('A70:V75');
+                    worksheet.unMergeCells('B70:F70');
+                    worksheet.unMergeCells('G70:J70');
+                    worksheet.unMergeCells('K70:M70');
+                    worksheet.unMergeCells('N70:O70');
+                    worksheet.unMergeCells('P70:S70');
+                    worksheet.unMergeCells('T70:U70');
+
+                    worksheet.unMergeCells('B71:F71');
+                    worksheet.unMergeCells('G71:J71');
+                    worksheet.unMergeCells('K71:M71');
+                    worksheet.unMergeCells('N71:O71');
+                    worksheet.unMergeCells('P71:S71');
+                    worksheet.unMergeCells('T71:U71');
+
+                    worksheet.mergeCells('A70:V70');
+                    worksheet.mergeCells('A71:V71');
                     worksheet.getCell('A70').value = "นักศึกษาจบใหม่ / New Graduate";
                     worksheet.getCell('A70').alignment = { vertical: 'middle', horizontal: 'center' };
-                    worksheet.getCell('A70').font = { size: 16, bold: true };
                 }
 
                 for (let i = 0; i < data.rmsWorkexperience.length; i++) {
@@ -249,11 +264,12 @@ const Report = (props: any) => {
 
     }
 
+
     return (
         <>
             {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
-            <a onClick={(e) => downloadReport(e)} className="inline-flex text-purple-800 bg-purple-200 hover:bg-purple-300 font-medium px-3 py-3 rounded-md text-xs text-center cursor-pointer">
-                <SiMicrosoftexcel className="inline-flex w-4 h-4 text-purple-800 mr-2" /> Application Form
+            <a onClick={(e) => downloadReport(e)} className="inline-flex bg-purple-600 hover:bg-purple-700 font-medium px-3 py-3 text-white rounded-md text-xs text-center cursor-pointer">
+                <SiMicrosoftexcel className="inline-flex w-4 h-4 text-white mr-2" /> application report
             </a>
         </>
     );

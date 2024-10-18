@@ -136,7 +136,11 @@ const Report = (props: any) => {
                     worksheet.mergeCells('A70:V75');
                     worksheet.getCell('A70').value = "นักศึกษาจบใหม่ / New Graduate";
                     worksheet.getCell('A70').alignment = { vertical: 'middle', horizontal: 'center' };
-                    worksheet.getCell('A70').font = { size: 16, bold: true };
+                    worksheet.getCell('A70').font = {
+                        size: 16,            // ขนาดฟอนต์
+                        bold: true,          // ทำตัวหนา
+                        color: { argb: 'FF0000' } // ตั้งสีเป็นแดง (RGB)
+                      };
                 }
 
                 for (let i = 0; i < data.rmsWorkexperience.length; i++) {
