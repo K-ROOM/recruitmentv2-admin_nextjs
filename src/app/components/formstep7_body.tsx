@@ -135,7 +135,7 @@ const Form7_Body = ({ session, header }: any) => {
                                 {
                                     formData.resume_FileName !== '' && formData.resume_FileName !== null ?
                                         <>
-                                            <button type="button" onClick={() => downloadFile(formData.recruitmentID, formData.toeic_FileName, 'RESUME')} className="text-white bg-purple-700 hover:bg-purple-800 mt-2 focus:outline-none font-medium rounded text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">
+                                            <button type="button" onClick={() => downloadFile(formData.recruitmentID, formData.resume_FileName, 'RESUME')} className="text-white bg-purple-700 hover:bg-purple-800 mt-2 focus:outline-none font-medium rounded text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">
                                                 <svg className="w-4 h-4 text-white dark:text-white mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 18">
                                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 1v11m0 0 4-4m-4 4L4 8m11 4v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3" />
                                                 </svg>
@@ -144,7 +144,7 @@ const Form7_Body = ({ session, header }: any) => {
                                         </>
                                         :
                                         <>
-                                            <button type="button" onClick={() => downloadFile(formData.recruitmentID, formData.toeic_FileName, 'RESUME')} className="text-white cursor-no-drop bg-gray-500 mt-2 focus:outline-none font-medium rounded text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800" disabled>
+                                            <button type="button" onClick={() => downloadFile(formData.recruitmentID, formData.resume_FileName, 'RESUME')} className="text-white cursor-no-drop bg-gray-500 mt-2 focus:outline-none font-medium rounded text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800" disabled>
                                                 <svg className="w-4 h-4 text-white dark:text-white mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 18">
                                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 1v11m0 0 4-4m-4 4L4 8m11 4v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3" />
                                                 </svg>
