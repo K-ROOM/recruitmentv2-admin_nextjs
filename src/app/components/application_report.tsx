@@ -221,6 +221,7 @@ const Report = (props: any) => {
                 worksheet.getCell('E153').value = data.inquiriesFromPreEmp == "N" ? "✓" : ""
 
                 const registrationDate = data.registrationDate;
+                worksheet.getCell('T178').value = data.firstnameth + "  " + data.lastnameth
                 worksheet.getCell('T179').value = registrationDate ? moment(data.registrationDate).format("DD MMM yyyy") : ""
                 // กำหนดค่าของเซลล์
 
